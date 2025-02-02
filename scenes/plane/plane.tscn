@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://2qg16myavaf2"]
+[gd_scene load_steps=8 format=3 uid="uid://2qg16myavaf2"]
 
+[ext_resource type="Script" uid="uid://bgj33qask6ncc" path="res://scenes/plane/plane.gd" id="1_cels0"]
 [ext_resource type="Texture2D" uid="uid://bwr5m0emsin1x" path="res://assets/plane/planes_sheet.png" id="1_xhrip"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cels0"]
@@ -36,6 +37,7 @@ radius = 30.0
 
 [node name="Plane" type="CharacterBody2D"]
 scale = Vector2(0.75, 0.75)
+script = ExtResource("1_cels0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_t4ive")
